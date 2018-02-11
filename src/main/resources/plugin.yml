@@ -1,0 +1,5 @@
+name: CommandCenter
+author: Nikl
+main: me.nikl.commandcenter.CommandCenter
+version: 1.0.0
+website: nikl.me

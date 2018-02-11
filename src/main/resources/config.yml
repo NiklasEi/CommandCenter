@@ -1,0 +1,25 @@
+# ----------------------------------------------------------------------------------#
+#                                                                                   #
+#                               CommandCenter config                                #
+#                                                                                   #
+# ----------------------------------------------------------------------------------#
+
+# All command specific settings include all aliases of the command automatically.
+# For example: a setting for 'plugins' includes 'pl' and any other alias
+
+# If false, only black-listed commands are removed
+removeAllCommandsExceptWhiteList: false
+
+# Commands on the black list will be removed
+blackList:
+- "plugins"
+- "kill"
+
+# Some commands are hardcoded in the whitelist (like the stop command)
+whiteList:
+- ""
+
+# Tab completion related settings
+tabComplete:
+  # if this is false, tab complete is completely disabled
+  enable: true

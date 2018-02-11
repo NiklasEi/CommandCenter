@@ -1,0 +1,19 @@
+*.class
+
+\# Package Files \#
+*.jar
+*.war
+*.ear
+
+# ignore the output
+out/
+target/
+
+**/dependency-reduced-pom.xml
+
+.idea/
+*.iml
+
+.settings/
+.project
+.classpath
