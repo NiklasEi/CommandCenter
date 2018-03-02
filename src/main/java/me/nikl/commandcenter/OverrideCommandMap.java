@@ -47,17 +47,17 @@ public class OverrideCommandMap extends SimpleCommandMap{
             commandCenter.debug(" deny registration of: " + command.getLabel() + "   name: " + command.getName());
             return false;
         }
-        commandCenter.debug(" -> register: " + command.getName());
+        //commandCenter.debug(" -> register: " + command.getName());
         command = manipulateCommandPreRegistration(command);
         return super.register(cmdName, fallbackPrefix, command);
     }
 
     private Command manipulateCommandPreRegistration(Command command) {
         if(command instanceof PluginCommand){
-            commandCenter.debug(" in plugin command");
+            //commandCenter.debug(" in plugin command");
             command.setPermissionMessage(" Testing custom perm message");
         } else {
-            commandCenter.debug(command.getName() + " is of class " + command.getClass().getSimpleName());
+            //commandCenter.debug(command.getName() + " is of class " + command.getClass().getSimpleName());
         }
         return command;
     }
